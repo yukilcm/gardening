@@ -161,7 +161,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/gardening/dev/1636031366100-2021-11-04T13:09:26.100Z/gardening.zip"
+          "S3Key": "serverless/gardening/dev/1636375831407-2021-11-08T12:50:31.407Z/gardening.zip"
         },
         "Handler": "handler.hello",
         "Runtime": "ruby2.7",
@@ -179,14 +179,14 @@
         "HelloLogGroup"
       ]
     },
-    "HelloLambdaVersionkR7iJboiPaTbzfauaxcJJ3QNuzoAgdimAMwlK1h8M": {
+    "HelloLambdaVersionxnSI3gZ0eyg3Dy0hc1UZlctY4gWfX4Xntxu3GZMgxWE": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "HelloLambdaFunction"
         },
-        "CodeSha256": "FIlMn/RXkyUyO+rBcT5nUUSTYC2gb0Yq/Bsl61M3cHk="
+        "CodeSha256": "oGNLQGVM2xFTa0e9beyAwT+Wxed/JfcAoc1R3GoKYQY="
       }
     },
     "HelloEventsRuleSchedule1": {
@@ -239,7 +239,7 @@
     "HelloLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "HelloLambdaVersionkR7iJboiPaTbzfauaxcJJ3QNuzoAgdimAMwlK1h8M"
+        "Ref": "HelloLambdaVersionxnSI3gZ0eyg3Dy0hc1UZlctY4gWfX4Xntxu3GZMgxWE"
       },
       "Export": {
         "Name": "sls-gardening-dev-HelloLambdaFunctionQualifiedArn"

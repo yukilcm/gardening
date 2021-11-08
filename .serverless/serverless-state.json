@@ -8,8 +8,8 @@
       "name": "aws",
       "runtime": "ruby2.7",
       "lambdaHashingVersion": "20201221",
+      "region": "ap-northeast-1",
       "stage": "dev",
-      "region": "us-east-1",
       "versionFunctions": true,
       "compiledCloudFormationTemplate": {
         "AWSTemplateFormatVersion": "2010-09-09",
@@ -174,7 +174,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/gardening/dev/1636031366100-2021-11-04T13:09:26.100Z/gardening.zip"
+                "S3Key": "serverless/gardening/dev/1636375831407-2021-11-08T12:50:31.407Z/gardening.zip"
               },
               "Handler": "handler.hello",
               "Runtime": "ruby2.7",
@@ -192,14 +192,14 @@
               "HelloLogGroup"
             ]
           },
-          "HelloLambdaVersionkR7iJboiPaTbzfauaxcJJ3QNuzoAgdimAMwlK1h8M": {
+          "HelloLambdaVersionxnSI3gZ0eyg3Dy0hc1UZlctY4gWfX4Xntxu3GZMgxWE": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "HelloLambdaFunction"
               },
-              "CodeSha256": "FIlMn/RXkyUyO+rBcT5nUUSTYC2gb0Yq/Bsl61M3cHk="
+              "CodeSha256": "oGNLQGVM2xFTa0e9beyAwT+Wxed/JfcAoc1R3GoKYQY="
             }
           },
           "HelloEventsRuleSchedule1": {
@@ -252,7 +252,7 @@
           "HelloLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "HelloLambdaVersionkR7iJboiPaTbzfauaxcJJ3QNuzoAgdimAMwlK1h8M"
+              "Ref": "HelloLambdaVersionxnSI3gZ0eyg3Dy0hc1UZlctY4gWfX4Xntxu3GZMgxWE"
             },
             "Export": {
               "Name": "sls-gardening-dev-HelloLambdaFunctionQualifiedArn"
@@ -359,7 +359,7 @@
         "timeout": 6,
         "runtime": "ruby2.7",
         "vpc": {},
-        "versionLogicalId": "HelloLambdaVersionkR7iJboiPaTbzfauaxcJJ3QNuzoAgdimAMwlK1h8M"
+        "versionLogicalId": "HelloLambdaVersionxnSI3gZ0eyg3Dy0hc1UZlctY4gWfX4Xntxu3GZMgxWE"
       }
     },
     "configValidationMode": "warn",
@@ -372,7 +372,6 @@
       "provider": {
         "$ref": "$[\"service\"][\"provider\"]"
       },
-      "region": "ap-northeast-1",
       "functions": {
         "$ref": "$[\"service\"][\"functions\"]"
       }
@@ -382,7 +381,7 @@
     "artifact": "/Users/konoyuki/Desktop/gardening/.serverless/gardening.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/gardening/dev/1636031366100-2021-11-04T13:09:26.100Z",
+    "artifactDirectoryName": "serverless/gardening/dev/1636375831407-2021-11-08T12:50:31.407Z",
     "artifact": "gardening.zip"
   }
 }
